@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offerte | Vergoot Dakwerken</title>
+    <meta name="description" content="Vraag een dakinspectie of offerte aan bij Vergoot Dakwerken in Gent. Fake contactgegevens voor demo-website.">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="scroll-meter" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="brand wordmark" href="index.html" aria-label="Naar de startpagina">
+            <span>Vergoot</span>
+            <small>Dakwerken sinds 2006</small>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+            <a href="index.html">Werfboek</a>
+            <a href="diensten.html">Dakwerken</a>
+            <a class="active" href="contact.html">Offerte</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sub-hero contact-page-hero">
+            <div class="reveal">
+                <p class="kicker">Eerst kijken, dan rekenen</p>
+                <h1>Bel voor lekken. Mail voor plannen. We houden het simpel.</h1>
+                <p class="lead">Stuur foto's mee als je die hebt. We antwoorden met een concreet voorstel voor inspectie, herstelling of renovatie.</p>
+            </div>
+            <img class="reveal" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1300&q=82" alt="Aannemer bespreekt plannen met klant">
+        </section>
+
+        <section class="section contact-layout">
+            <aside class="contact-panel reveal">
+                <p class="kicker">Fake gegevens</p>
+                <h2>Vergoot Dakwerken BV</h2>
+                <ul class="contact-lines">
+                    <li><span>Adres</span>Industrieweg 42, 9000 Gent</li>
+                    <li><span>Telefoon</span><a href="tel:+3294821674">09 482 16 74</a></li>
+                    <li><span>Spoednummer</span><a href="tel:+32472813920">0472 81 39 20</a></li>
+                    <li><span>E-mail</span><a href="mailto:info@vergoot-dakwerken.be">info@vergoot-dakwerken.be</a></li>
+                    <li><span>BTW</span>BE 0744.218.903</li>
+                </ul>
+
+                <div class="hours-box">
+                    <strong>Openingsuren</strong>
+                    <p>Ma-vr 07:30-18:00<br>Za 08:00-12:00<br>Stormschade: permanent bereikbaar</p>
+                </div>
+            </aside>
+
+            <form class="quote-form reveal" action="#" method="post" data-contact-form>
+                <div class="form-row">
+                    <label for="name">Naam</label>
+                    <input id="name" name="name" type="text" placeholder="Voor- en achternaam" required>
+                </div>
+
+                <div class="form-row two">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="naam@mail.be" required>
+                    </div>
+                    <div>
+                        <label for="phone">Telefoon</label>
+                        <input id="phone" name="phone" type="tel" placeholder="04 00 00 00 00">
+                    </div>
+                </div>
+
+                <div class="form-row two">
+                    <div>
+                        <label for="type">Project</label>
+                        <select id="type" name="type">
+                            <option>Dak lekt</option>
+                            <option>Volledige renovatie</option>
+                            <option>Plat dak</option>
+                            <option>Dakisolatie</option>
+                            <option>Dakgoot of zinkwerk</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="postal">Postcode</label>
+                        <input id="postal" name="postal" type="text" placeholder="9000">
+                    </div>
+                </div>
+
+                <fieldset class="urgency">
+                    <legend>Hoe dringend is het?</legend>
+                    <label><input type="radio" name="urgency" value="storm"> Vandaag nog lek</label>
+                    <label><input type="radio" name="urgency" value="soon" checked> Binnen enkele weken</label>
+                    <label><input type="radio" name="urgency" value="planning"> Gewoon plannen</label>
+                </fieldset>
+
+                <div class="form-row">
+                    <label for="message">Wat zie je aan het dak?</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Bijvoorbeeld: vochtplek op zolder, oude roofing, kapotte pannen, dakgoot loopt over..." required></textarea>
+                </div>
+
+                <button class="button filled" type="submit">Verstuur aanvraag</button>
+                <p class="form-feedback" data-form-feedback aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>Vergoot Dakwerken</strong>
+            <span>Industrieweg 42, 9000 Gent</span>
+        </div>
+        <div>
+            <a href="tel:+3294821674">09 482 16 74</a>
+            <a href="mailto:info@vergoot-dakwerken.be">info@vergoot-dakwerken.be</a>
+        </div>
+    </footer>
+</body>
+
+</html>
