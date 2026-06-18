@@ -690,18 +690,57 @@ cite {
 
 .urgency {
     display: grid;
-    gap: 10px;
+    gap: 14px;
     margin: 0;
     padding: 18px;
     border: 1px solid var(--line);
 }
 
+.urgency-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
 .urgency label {
     display: flex;
-    gap: 10px;
-    align-items: center;
-    color: var(--ink-muted);
+    gap: 12px;
+    align-items: flex-start;
+    min-height: 118px;
+    padding: 14px;
+    color: var(--tar);
+    background: #fffdf8;
+    border: 1px solid var(--line);
     text-transform: none;
+    cursor: pointer;
+}
+
+.urgency label:has(input:checked) {
+    border-color: var(--tile);
+    box-shadow: inset 0 0 0 2px rgba(157, 63, 36, 0.18);
+}
+
+.urgency input {
+    width: auto;
+    margin-top: 4px;
+    accent-color: var(--tile);
+}
+
+.urgency strong,
+.urgency small {
+    display: block;
+}
+
+.urgency strong {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.urgency small {
+    color: var(--ink-muted);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.35;
 }
 
 .form-feedback {
@@ -809,6 +848,7 @@ cite {
     .proof-strip,
     .work-grid,
     .material-grid,
+    .urgency-options,
     .form-row.two {
         grid-template-columns: 1fr;
     }

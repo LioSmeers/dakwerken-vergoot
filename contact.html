@@ -95,10 +95,30 @@
                 </div>
 
                 <fieldset class="urgency">
-                    <legend>Hoe dringend is het?</legend>
-                    <label><input type="radio" name="urgency" value="storm"> Vandaag nog lek</label>
-                    <label><input type="radio" name="urgency" value="soon" checked> Binnen enkele weken</label>
-                    <label><input type="radio" name="urgency" value="planning"> Gewoon plannen</label>
+                    <legend>Wanneer moet er iemand langskomen?</legend>
+                    <div class="urgency-options">
+                        <label>
+                            <input type="radio" name="urgency" value="storm">
+                            <span>
+                                <strong>Noodgeval</strong>
+                                <small>Er is nu een lek, stormschade of waterinsijpeling.</small>
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="urgency" value="soon" checked>
+                            <span>
+                                <strong>Binnenkort</strong>
+                                <small>Het dak moet bekeken worden binnen de komende weken.</small>
+                            </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="urgency" value="planning">
+                            <span>
+                                <strong>Rustig plannen</strong>
+                                <small>Je wil een renovatie of offerte voorbereiden.</small>
+                            </span>
+                        </label>
+                    </div>
                 </fieldset>
 
                 <div class="form-row">
